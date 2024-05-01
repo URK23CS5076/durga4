@@ -1,53 +1,54 @@
 exp4
 
-When working with remote repositories in Git, there are several commands and actions you
-can perform.
+AIM:
+To understand the concepts and procedure of github issues.
 
+DESCRIPTION:
+Github Issues:
 
-Cloning a Remote Repository
- The git clone command is used to create a local copy of a remote
-repository on your machine.
-To clone a remote repository, use the following command
-git clone &lt;remote-url&gt;
- Replace &lt;remote-url&gt; with the URL of the remote repository.
- For example, to clone a repository hosted on GitHub, you can use
-git clone https://github.com/username/repository.git
+GitHub Issues is a robust project management feature integrated into the GitHub platform, designed to
+streamline collaboration, communication, and issue tracking within software development projects.
+It serves as a centralized hub for tracking tasks, enhancements, bug reports, and other project-related
+activities within a GitHub repository. It provides a structured and organized way for development teams
+to manage their workflow, ensuring that issues are identified, discussed, and resolved efficiently.
 
-Adding a Remote Repository
- If you have an existing local repository and want to connect it to a remote
-repository, you can use the git remote add command.
- To add a remote repository, use the following command:
-git remote add &lt;remote-name&gt; &lt;remote-url&gt;
- Replace &lt;remote-name&gt; with a name for the remote repository (e.g.,
-&quot;origin&quot;) and &lt;remote-url&gt; with the URL of the remote repository.
- For example
-git remote add origin https://github.com/username/repository.git
+Steps to Create and Address GitHub Issues
 
-Pushing Changes to a Remote Repository
-After making changes to your local repository, you can push those changes to
-the remote repository using the git push command.
-To push changes to a remote repository, use the following command:
-git push &lt;remote-name&gt; &lt;branch-name&gt;
-Replace &lt;remote-name&gt; with the name of the remote repository (e.g., &quot;origin&quot;) and &lt;branch-
-name&gt; with the name of the branch you want to push.
-For example:
+1. Create a new issue in your repository:
+i. Go to your GitHub repository.
+ii. Click on the "Issues" tab.
+iii. Click the "New issue" button
+iv. Fill in the issue title and description.
+v. Optionally, assign the issue to a collaborator, apply labels, and set milestones.
+
+2. Assign the issue to a collaborator:
+i. Within the issue, use the "Assignees" section to assign the issue to a collaborator.
+ii. The assigned collaborator will receive notifications about the issue.
+
+3. Label the issue with appropriate tags:
+i. Apply labels to categorize and prioritize issues.
+ii. Create and use labels like "bug," "feature," or any relevant labels for your project.
+iii. Labels can be added when creating the issue or edited later.
+
+4. Close the issue using a commit message:
+i. Make changes to the codebase to address the issue.
+ii. In your local repository, commit the changes with a commit message that references the issue number:
+git commit -m "Fix #1: Resolve issue with feature X"
+Replace "1" with the actual issue number.
+iii. Push the changes to GitHub:
 git push origin main
-Pulling Changes from a Remote Repository
- To update your local repository with the latest changes from the remote
-repository, you can use the git pull command.
- To pull changes from a remote repository, use the following command:
-git pull &lt;remote-name&gt; &lt;branch-name&gt;
- Replace &lt;remote-name&gt; with the name of the remote repository (e.g.,
-&quot;origin&quot;) and &lt;branch-name&gt; with the name of the branch you want to pull.
- For example
-git pull origin main
+The issue will be automatically closed when the commit is pushed.
 
-These are some basic commands for working with remote repositories in Git.
-Remember to replace &lt;remote-url&gt;, &lt;remote-name&gt; and &lt;branch-name&gt; with
-the appropriate values for your specific repository.
+5. Optional: Comment and Discuss:
+i. Encourage collaboration by adding comments to the issue.
+ii. Mention collaborators using @username to notify them.
+iii. Discuss the issue, provide additional information, or ask for feedback.
+
+
 
 Result:
-Working with remote repositories has been done successfully.
+Working with Github issues has been executed successfully.
+
 
 
 exp5
